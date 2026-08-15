@@ -8,7 +8,7 @@ def left_rotate(arr,n):
     for i in range(n):
         arr[i-1] = arr[i]
 
-    arr[i-1] = temp
+    arr[n-1] = temp
 
     print(arr)
 
