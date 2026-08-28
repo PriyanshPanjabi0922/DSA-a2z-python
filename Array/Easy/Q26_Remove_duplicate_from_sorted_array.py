@@ -6,7 +6,7 @@ nums =[0,0,0,1,2,3,4,4,5,5,7]
 n = len(nums)
 
 def Duplicates_problem(nums,n):
-    position = 0
+    position = 1
      
     for i in range(n):
             
