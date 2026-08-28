@@ -8,7 +8,7 @@ n = len(nums)
 def Duplicates_problem(nums,n):
     position = 0
      
-    for i in range(1,n):
+    for i in range(n):
             
         if nums[i] != nums[i-1]:
             nums[position] = nums[i]
