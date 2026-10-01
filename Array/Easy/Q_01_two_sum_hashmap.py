@@ -1,25 +1,25 @@
-### Problem name: Two Sum
+nums = [3,2,8,4]
+target = 6
+dict1 = {
+        
+    }
 
-arr = [2,4,1,7,9,11,15]
-target = 5
-
-## Optimal Approach:
-
-def Solution(arr,target):
-    n = len(arr)
-    seen = {}
+def two_sum(nums,target,dict1):
+    n = len(nums)
 
     for i in range(n):
-        current = arr[i]
+        
+
+        current = nums[i] 
         needed = target - current
 
-        if needed in seen:
-            return [seen[needed],i]
-
+        if needed in dict1:
+            return [dict1[needed],i]
         else:
-            seen[current] = i
 
+            dict1[current] = i
 
-answer = Solution(arr,target)
+    return "Not Possible"
 
+answer = two_sum(nums,target,dict1)
 print(answer)
